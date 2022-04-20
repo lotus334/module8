@@ -24,10 +24,6 @@ public class StudentRepository {
         Student student5 = new Student("Genya", "Genko", 20, 87772223111L);
         student5.addCourse("Russian", 2);
         student5.addCourse("English", 5);
-        faculty.addStudent(student1);
-        faculty.addStudent(student2);
-        faculty.addStudent(student3);
-        faculty.addStudent(student4);
-        faculty.addStudent(student5);
+        faculty.addStudents(student1, student2, student3, student4, student5);
     }
 }
