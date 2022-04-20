@@ -20,7 +20,7 @@ public class Student extends Person {
     private float score;
 
     @Getter
-    private Map<String, Integer> courses = new TreeMap<>(Comparator.reverseOrder());
+    private Map<String, Integer> courses = new TreeMap<>((o1, o2) -> o2.compareTo(o1));
 
     public Student(@NonNull String firstName, @NonNull String secondName, int age, long phone) {
         super(firstName, secondName, age, phone);
