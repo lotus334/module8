@@ -15,11 +15,11 @@ public class Student extends Person {
     @Setter
     float score;
 
-    public Student(@NonNull String firstName, @NonNull String secondName, int age, long phone) {
+    public Student(@NonNull String firstName, @NonNull String secondName, int age, long phone) throws Exception {
         super(firstName, secondName, age, phone);
     }
 
-    public Student(@NonNull String firstName, @NonNull String secondName, int age) {
+    public Student(@NonNull String firstName, @NonNull String secondName, int age) throws Exception {
         super(firstName, secondName, age);
     }
 }

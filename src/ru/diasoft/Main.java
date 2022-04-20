@@ -4,7 +4,12 @@ import ru.diasoft.service.PersonDemo;
 
 public class Main {
     public static void main(String[] args) {
-        PersonDemo personDemo = new PersonDemo();
-        personDemo.demo();
+        try {
+            PersonDemo personDemo = new PersonDemo();
+            personDemo.demo();
+        } catch (Exception ex) {
+            System.out.println("Something went wrong");
+            ex.printStackTrace();
+        }
     }
 }
