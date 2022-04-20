@@ -9,7 +9,7 @@ public class PersonDemo {
 
     public PersonDemo() throws Exception {
         person = new Person("Ivan", "Ivanov", 35, 88005553555L);
-        student = new Student("Student", "Otlichnik", 17, 87772223555L);
+        student = new Student("Student", "Otlichnik", 25, 87772223555L);
     }
 
     public void demo() {
