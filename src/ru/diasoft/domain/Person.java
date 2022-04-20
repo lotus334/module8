@@ -22,15 +22,12 @@ public class Person {
     @Setter
     private long phone;
 
-    public Person(@NonNull String firstName,@NonNull String secondName, int age, long phone) throws Exception {
+    public Person(@NonNull String firstName,@NonNull String secondName, int age, long phone) {
         this(firstName, secondName, age);
         this.phone = phone;
     }
 
-    public Person(@NonNull String firstName,@NonNull String secondName, int age) throws Exception {
-        if (age < 18) {
-            throw new IllegalArgumentException("age could not be less than 18");
-        }
+    public Person(@NonNull String firstName,@NonNull String secondName, int age) {
         this.firstName = firstName;
         this.secondName = secondName;
         this.age = age;
