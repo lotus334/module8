@@ -17,13 +17,17 @@ public class StudentRepository {
         student2.addCourse("English", 4);
         Student student3 = new Student("Masha", "Mashina", 17, 87772223333L);
         student3.addCourse("Russian", 5);
-        student3.addCourse("English", 3);
+        student3.addCourse("English", 5);
         Student student4 = new Student("Petya", "Petin", 24, 87772223222L);
         student4.addCourse("Russian", 4);
         student4.addCourse("English", 4);
         Student student5 = new Student("Genya", "Genko", 20, 87772223111L);
         student5.addCourse("Russian", 2);
         student5.addCourse("English", 5);
-        faculty.addStudents(student1, student2, student3, student4, student5);
+        Student student6 = new Student("Genya", "Genko", 22, 87772223111L);
+        student6.addCourse("Russian", 5);
+        student6.addCourse("English", 5);
+        Student student7 = new Student("Petya", "Petin", 24, 87772223000L);
+        faculty.addStudents(student1, student2, student3, student4, student5, student6, student7);
     }
 }

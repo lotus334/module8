@@ -2,13 +2,11 @@ package ru.diasoft.domain;
 
 import lombok.Getter;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Faculty {
     @Getter
-    private List<Student> studentsList = new ArrayList<>();
+    private Set<Student> studentsList = new TreeSet<>();
 
     public void addStudent(Student student) {
         studentsList.add(student);

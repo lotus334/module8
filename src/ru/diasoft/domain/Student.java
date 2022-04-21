@@ -1,16 +1,13 @@
 package ru.diasoft.domain;
 
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.Comparator;
 import java.util.Map;
 import java.util.TreeMap;
 
 @ToString(callSuper = true)
-public class Student extends Person {
+public class Student extends Person implements Comparable<Student> {
     @Getter
     @Setter
     private String group;
@@ -34,5 +31,13 @@ public class Student extends Person {
         courses.put(courseName, courseScore);
         float score = (float)courses.values().stream().reduce(Integer::sum).get() / courses.size();
         setScore(score);
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return Comparator.comparing(Student::getSecondName)
+                .thenComparing(Student::getFirstName)
+                .thenComparingInt(Student::getAge)
+                .compare(this, o);
     }
 }

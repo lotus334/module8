@@ -1,11 +1,9 @@
 package ru.diasoft.domain;
 
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 @ToString
+@EqualsAndHashCode(exclude={"phone"})
 public class Person {
 
     @Getter
