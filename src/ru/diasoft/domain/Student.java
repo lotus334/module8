@@ -19,12 +19,12 @@ public class Student extends Person implements Comparable<Student> {
     @Getter
     private Map<String, Integer> courses = new TreeMap<>((o1, o2) -> o2.compareTo(o1));
 
-    public Student(@NonNull String firstName, @NonNull String secondName, int age, long phone) {
-        super(firstName, secondName, age, phone);
+    public Student(String firstName, String secondName, int age) {
+        super(firstName, secondName, age);
     }
 
-    public Student(@NonNull String firstName, @NonNull String secondName, int age) {
-        super(firstName, secondName, age);
+    public Student(String firstName, String secondName, int age, long phone) {
+        super(firstName, secondName, age, phone);
     }
 
     public void addCourse(String courseName, int courseScore) {

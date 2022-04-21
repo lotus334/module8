@@ -21,13 +21,13 @@ public class StudentRepository {
         Student student4 = new Student("Petya", "Petin", 24, 87772223222L);
         student4.addCourse("Russian", 4);
         student4.addCourse("English", 4);
-        Student student5 = new Student("Genya", "Genko", 20, 87772223111L);
+        Student student5 = new Student("Genya", "Genko", 20);
         student5.addCourse("Russian", 2);
         student5.addCourse("English", 5);
         Student student6 = new Student("Genya", "Genko", 22, 87772223111L);
         student6.addCourse("Russian", 5);
         student6.addCourse("English", 5);
-        Student student7 = new Student("Petya", "Petin", 24, 87772223000L);
+        Student student7 = new Student("Petya", "Petin", 24);
         faculty.addStudents(student1, student2, student3, student4, student5, student6, student7);
     }
 }
